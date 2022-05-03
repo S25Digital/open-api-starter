@@ -1,0 +1,25 @@
+{
+  "name": "@s25digital/open-api-starter",
+  "version": "1.0.0",
+  "description": "The starter open api documentation project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S25Digital/open-api-starter.git"
+  },
+  "keywords": [],
+  "author": "Simranjeet Singh<simranjeet@s25.digital>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/S25Digital/open-api-starter/issues"
+  },
+  "homepage": "https://github.com/S25Digital/open-api-starter#readme",
+  "dependencies": {
+    "@stoplight/spectral-cli": "^6.3.0",
+    "redoc-cli": "^0.13.11",
+    "swagger-cli": "^4.0.4"
+  }
+}
