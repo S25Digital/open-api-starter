@@ -1,0 +1,30 @@
+get:
+  summary: List
+  operationId: listOrders
+  description: List all orders
+  tags:
+    - orders
+  parameters:
+    - $ref: "../parameters/query/size.yaml"
+  responses:
+    '200':
+      description: A paged array of orders
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: "../schemas/Order.yaml"
+    default:
+      $ref: "../responses/InternalError.yaml"
+post:
+  summary: Create
+  operationId: createOrders
+  description: Create aan order
+  tags:
+    - orders
+  responses:
+    '201':
+        $ref : "../responses/Created.yaml"
+    default:
+        $ref : "../responses/InternalError.yaml"

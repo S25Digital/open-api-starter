@@ -1,0 +1,17 @@
+get:
+  summary: Detail
+  operationId: showOrderById
+  description: Detail of a specific order
+  tags:
+    - orders
+  parameters:
+    - $ref: "../parameters/path/id.yaml"
+  responses:
+    '200':
+      description: Expected Response
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/Order.yaml"
+    default:
+      $ref: "../responses/InternalError.yaml"
