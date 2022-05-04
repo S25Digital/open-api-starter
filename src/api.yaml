@@ -1,0 +1,27 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: An Example API
+  description: An Example API with multiple files
+  license:
+    name: MIT
+  contact:
+    name: API Support
+    url: https://s25.digital
+    email: contact@s25.digital
+servers:
+  - url: http://api.s25.digital/v1
+tags:
+  - name: orders
+paths:
+  /orders:
+    $ref: "./resources/orders.yaml"
+  /orders/{id}:
+    $ref: "./resources/order.yaml"
+components:
+  parameters:
+    $ref: "./parameters/index.yaml"
+  schemas:
+    $ref: "./schemas/index.yaml"
+  responses:
+    $ref: "./responses/index.yaml"

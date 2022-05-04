@@ -4,7 +4,12 @@
   "description": "The starter open api documentation project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf build",
+    "precompile": "npm run clean",
+    "compile": "swagger-cli bundle src/api.yaml --outfile build/api.yaml --type yaml",
+    "postcompile": "spectral lint build/api.yaml",
+    "prebuild": "npm run compile",
+    "build": "redoc-cli build build/api.yaml  --output build/index.html --options.onlyRequiredInSamples"
   },
   "repository": {
     "type": "git",
@@ -20,6 +25,7 @@
   "dependencies": {
     "@stoplight/spectral-cli": "^6.3.0",
     "redoc-cli": "^0.13.11",
+    "rimraf": "^3.0.2",
     "swagger-cli": "^4.0.4"
   }
 }
