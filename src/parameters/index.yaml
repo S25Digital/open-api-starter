@@ -1,0 +1,7 @@
+# path
+id:
+  $ref: './path/id.yaml'
+
+# query
+size:
+  $ref: './query/size.yaml'

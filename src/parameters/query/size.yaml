@@ -1,0 +1,8 @@
+
+name: size
+in: query
+description: Number of items in a page
+required: false
+schema:
+  type: integer
+  format: int32
