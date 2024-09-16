@@ -24,7 +24,7 @@
   "homepage": "https://github.com/S25Digital/open-api-starter#readme",
   "dependencies": {
     "@stoplight/spectral-cli": "^6.3.0",
-    "redoc-cli": "^0.13.11",
+    "redoc-cli": "^0.13.21",
     "rimraf": "^3.0.2",
     "swagger-cli": "^4.0.4"
   }
